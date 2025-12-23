@@ -92,21 +92,39 @@ h2 {
 }
   
 .audience-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-6px);
+  box-shadow:
+    0 18px 40px rgba(0, 0, 0, 0.08);
 }
 
 .audience-card i {
-  font-size: 2rem;
+  font-size: 2.4rem;
   color: #7dbf82;
-  margin-bottom: 10px;
+  background: rgba(125, 191, 130, 0.12);
+  padding: 14px;
+  border-radius: 16px;
+  margin-bottom: 18px;
 }
 
 .audience-card h3 {
-  margin: 0;
-  font-size: 1rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-bottom: 10px;
 }
 
 .audience-card p {
-  font-size: 0.85rem;
-  color: #555;
+  font-size: 0.9rem;
+  line-height: 1.55;
+  color: #5a5a5a;
+}
+  .audience-card:nth-child(2) {
+  background: linear-gradient(180deg, #ffffff, #f6fbff);
+}
+
+.audience-card:nth-child(3) {
+  background: linear-gradient(180deg, #ffffff, #fff8f4);
+}
+
+.audience-card:nth-child(4) {
+  background: linear-gradient(180deg, #ffffff, #f7f6fb);
 }
