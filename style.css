@@ -59,8 +59,7 @@ h2 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
-  justify-content: center;
-  max-width: 500px;
+  width: 440px; /* dvě kartičky vedle sebe (2×200px + mezera) */
   margin: 0 auto;
 }
 
