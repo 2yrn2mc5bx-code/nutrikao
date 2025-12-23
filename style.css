@@ -66,7 +66,7 @@ h2 {
 .audience-card {
   background-color: #fff;
   padding: 30px 20px;
-  border-radius: 12px;
+  border-radius: 20px; /* upraveno z 12px */
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
   transition: transform 0.3s ease;
 }
@@ -75,8 +75,9 @@ h2 {
   transform: translateY(-5px);
 }
 
-.emoji {
-  font-size: 2rem;
-  display: block;
+.audience-card i {
+  font-size: 2.5rem;
+  color: #7dbf82;
   margin-bottom: 10px;
+  display: block;
 }
