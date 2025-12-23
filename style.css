@@ -57,9 +57,9 @@ h2 {
 
 .audience-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 200px 200px;
   gap: 20px;
-  width: 440px; /* dvě kartičky vedle sebe (2×200px + mezera) */
+  justify-content: center;
   margin: 0 auto;
 }
 
