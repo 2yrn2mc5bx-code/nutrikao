@@ -38,3 +38,45 @@ h2 {
 .button:hover {
   background-color: #6aad71;
 }
+.audience {
+  padding: 60px 20px;
+  background-color: #fef9f6;
+  text-align: center;
+}
+
+.audience h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.audience .intro {
+  max-width: 600px;
+  margin: 0 auto 40px;
+  color: #555;
+}
+
+.audience-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.audience-card {
+  background-color: #fff;
+  padding: 30px 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.audience-card:hover {
+  transform: translateY(-5px);
+}
+
+.emoji {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 10px;
+}
