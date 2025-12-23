@@ -69,11 +69,13 @@ h2 {
   .audience-grid {
     grid-template-columns: 1fr;
     max-width: 240px; /* aby to zůstalo hezky uprostřed */
+  }
 }
 
 .audience-card {
-  background: linear-gradient(180deg, #ffffff, #f9fbf8);
-  border-radius: 28px;            /* VELKÉ ZAOBLENÍ */
+  /* stronger contrast against page background */
+  background: linear-gradient(180deg, #ffffff, #ecfbef);
+  border-radius: 20px;            /* CORNER RADIUS 20px */
   padding: 32px 28px;
   min-height: 240px;
 
@@ -82,25 +84,30 @@ h2 {
   align-items: center;
   text-align: center;
 
+  /* thicker, more visible stroke */
+  border: 2px solid rgba(47, 47, 47, 0.12);
+
   box-shadow:
-    0 10px 25px rgba(0, 0, 0, 0.05),
+    0 10px 25px rgba(0, 0, 0, 0.06),
     inset 0 1px 0 rgba(255, 255, 255, 0.6);
 
   transition:
-    transform 0.35s ease,
-    box-shadow 0.35s ease;
+    transform 0.28s ease,
+    box-shadow 0.28s ease,
+    border-color 0.18s ease;
 }
   
 .audience-card:hover {
-  transform: translateY(-6px);
+  transform: translateY(-8px);
   box-shadow:
-    0 18px 40px rgba(0, 0, 0, 0.08);
+    0 20px 44px rgba(0, 0, 0, 0.10);
+  border-color: rgba(47, 47, 47, 0.18);
 }
 
 .audience-card i {
   font-size: 2.4rem;
-  color: #7dbf82;
-  background: rgba(125, 191, 130, 0.12);
+  color: #167f3a; /* stronger green */
+  background: rgba(22, 127, 58, 0.12);
   padding: 14px;
   border-radius: 16px;
   margin-bottom: 18px;
@@ -115,16 +122,87 @@ h2 {
 .audience-card p {
   font-size: 0.9rem;
   line-height: 1.55;
-  color: #5a5a5a;
+  color: #4f4f4f;
 }
-  .audience-card:nth-child(2) {
-  background: linear-gradient(180deg, #ffffff, #f6fbff);
+
+/* Stronger, thicker borders and bolder tints for variants */
+.audience-card:nth-child(2) {
+  background: linear-gradient(180deg, #ffffff, #d9eeff); /* stronger blue tint */
+  border: 2px solid rgba(40, 110, 200, 0.20);
 }
 
 .audience-card:nth-child(3) {
-  background: linear-gradient(180deg, #ffffff, #fff8f4);
+  background: linear-gradient(180deg, #ffffff, #fff0dc); /* stronger warm tint */
+  border: 2px solid rgba(205, 120, 45, 0.20);
 }
 
 .audience-card:nth-child(4) {
-  background: linear-gradient(180deg, #ffffff, #f7f6fb);
+  background: linear-gradient(180deg, #ffffff, #e9e2ff); /* stronger purple tint */
+  border: 2px solid rgba(95, 60, 200, 0.18);
+}
+
+/* Services section styles (added) */
+.services {
+  padding: 80px 20px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.services h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.services .intro {
+  max-width: 600px;
+  margin: 0 auto 40px;
+  color: #555;
+}
+
+.section-subtitle {
+  font-size: 1.4rem;
+  margin: 60px 0 30px;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.service-card {
+  background-color: #f8f8f8;
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease;
+  border: 2px solid rgba(47, 47, 47, 0.10);
+}
+
+.service-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(47, 47, 47, 0.16);
+}
+
+.service-card h3 {
+  margin-bottom: 8px;
+  font-size: 1.1rem;
+}
+
+.service-card p {
+  font-size: 0.95rem;
+  color: #555;
+  flex-grow: 1;
+}
+
+.price {
+  margin-top: 16px;
+  font-weight: bold;
+  color: #7dbf82;
+  font-size: 1rem;
 }
