@@ -1,9 +1,10 @@
 body {
   margin: 0;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Poppins', sans-serif;
   background-color: #fdfdfc;
   color: #2f2f2f;
 }
+
 
 .hero {
   padding: 80px 20px;
