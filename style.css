@@ -38,6 +38,7 @@ h2 {
 .button:hover {
   background-color: #6aad71;
 }
+
 .audience {
   padding: 60px 20px;
   background-color: #fef9f6;
@@ -57,14 +58,20 @@ h2 {
 
 .audience-grid {
   display: grid;
-  grid-template-columns: 200px 200px;
   gap: 20px;
   justify-content: center;
   margin: 0 auto;
+  grid-template-columns: repeat(2, minmax(200px, 200px));
+}
+
+@media (max-width: 460px) {
+  .audience-grid {
+    grid-template-columns: 1fr;
+    max-width: 240px; /* aby to zůstalo hezky uprostřed */
 }
 
 .audience-card {
-  width: 200px;
+  /* zruš natvrdo width, grid si to řídí sám */
   height: 200px;
   background-color: #fff;
   border-radius: 20px;
@@ -77,7 +84,7 @@ h2 {
   transition: transform 0.3s ease;
   padding: 20px;
 }
-
+  
 .audience-card:hover {
   transform: translateY(-5px);
 }
